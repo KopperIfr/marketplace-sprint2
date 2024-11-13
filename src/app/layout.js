@@ -1,6 +1,8 @@
 import localFont from "next/font/local";
 import "./globals.css";
 import { ThirdwebProvider } from 'thirdweb/react';
+import Navbar from "@/components/Navbar";
+import PaddingWrapper from "@/components/layout/PaddingWraper";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -25,7 +27,10 @@ export default function RootLayout({ children }) {
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <ThirdwebProvider>
-          {children}
+          <Navbar />
+            <PaddingWrapper>
+              {children}
+            </PaddingWrapper>
         </ThirdwebProvider>
       </body>
     </html>
