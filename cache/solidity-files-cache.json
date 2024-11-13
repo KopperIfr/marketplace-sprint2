@@ -82,8 +82,8 @@
       ]
     },
     "/Users/arthuroifrim/Desktop/Master/marketplace-sprint2/contracts/NFT.sol": {
-      "lastModificationDate": 1731479969703,
-      "contentHash": "063a8e2a09b5d3fa0ad57d81f459910c",
+      "lastModificationDate": 1731481522522,
+      "contentHash": "f468bc6c6c1805646b1ed6ce0add2c4c",
       "sourceName": "contracts/NFT.sol",
       "solcConfig": {
         "version": "0.8.27",
