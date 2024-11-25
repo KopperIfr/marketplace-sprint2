@@ -1,5 +1,7 @@
 import { getContract, readContract } from "thirdweb"
-
+import { baseSepolia } from 'thirdweb/chains'
+import client from "./thirdweb/Client";
+import { useReadContract } from "thirdweb/react";
 
 
 export default function NFTCollection() {

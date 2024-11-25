@@ -1,5 +1,6 @@
 "use client";
 import { ConnectButton, darkTheme, useActiveAccount } from "thirdweb/react";
+import { sepolia, localhost, hardhat } from "thirdweb/chains";
 import { createWallet } from "thirdweb/wallets";
 import Image from "next/image";
 import client from "./thirdweb/Client";
@@ -33,9 +34,10 @@ export default function Navbar() {
                 )}
                 <ConnectButton 
                 wallets={wallets}
-                theme={darkTheme}
                 connectModal={{size: 'wide'}}
+                theme={darkTheme}
                 client={client}
+                chains={[sepolia, hardhat]}
                 />
             </div>
         </nav>
